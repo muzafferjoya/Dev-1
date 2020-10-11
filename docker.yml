@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - name: Create Container
+      shell: docker container run -itd --name devops-web -p 9000:80 muzaffarjoya/devops-web
